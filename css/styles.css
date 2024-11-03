@@ -4,36 +4,20 @@ body, html {
     margin: 0;
     margin-bottom: -10px;
     font-family: 'Roboto', sans-serif;
-  }
+}
 
 .content-container {
     height: calc(100vh - 60px); /* Ajusta el tamaño del contenedor */
     overflow-y: auto;
     padding-bottom: 30px;
 }
-/* 
-.btn-custom {
-    background-color: #CB1515;
-    color: white;
-}
 
-.btn-custom:hover {
-    background-color: #002A8F;
-    color: white;
-} */
-
-/* .logo-text {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 1.7rem;
-} */
-
- .icon-main {
+.icon-main {
     height: 100px;
 }
 
-  
 .list-menu {
+    list-style-type: none;
     margin: auto;
     /* border: 3px solid #D9D9D9;  */
     padding: 10px;
@@ -44,11 +28,12 @@ body, html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center
+    align-content: center;
     width: calc(100hh - 60px);
 }
 
-.list-menu-item {
+.list-menu-item a {
+    color: #002A8F;
     text-decoration: none;
     text-align: center;
     min-width: 120px;
@@ -61,14 +46,14 @@ body, html {
     padding: .5rem 1rem;
     color: #002A8F;
 }
-.list-menu-item:hover{
-    color:white !important;
-    background-color: #7C8CC9;
-}
-.list-menu a {
-    color: #002A8F;
-    text-decoration: none;
-}
+
+    .list-menu-item a:hover {
+        color: white !important;
+        background-color: #7C8CC9;
+    }
+/*.list-menu a {
+    
+}*/
 .list-menu-item i {
     color: inherit;
     font-size: 60px !important;
@@ -76,7 +61,7 @@ body, html {
 
 /* FOOTER ----------------  */
 footer {
-    background-color: #002A8F; 
+    background-color: #002A8F;
     color: white;
     text-align: center;
     padding: 0;
@@ -85,7 +70,8 @@ footer {
     width: 100%;
     height: 48px;
     display: inline;
-  }
+}
+
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -93,20 +79,27 @@ footer {
     text-align: center;
     margin: 8px 0;
 }
-.scico{ margin:0; }
-.scico a i {padding: 5px 11px;}
-.scico a {
-    background-color: #4A5CA3;
-    color: white;
-    border-radius: 20px;
+
+.scico {
     margin: 0;
-    padding: 8px 1px;
-    font-size: 1.2rem;
 }
-.scico a:hover 
-{
-    background-color: #7F7F7F;
-}
+
+    .scico a i {
+        padding: 5px 11px;
+    }
+
+    .scico a {
+        background-color: #4A5CA3;
+        color: white;
+        border-radius: 20px;
+        margin: 0;
+        padding: 8px 1px;
+        font-size: 1.2rem;
+    }
+
+        .scico a:hover {
+            background-color: #7F7F7F;
+        }
 
 .footer-links a {
     font-weight: bold;
@@ -114,46 +107,91 @@ footer {
     margin-left: 4px;
     padding: 8px 5px;
     text-decoration: none;
-  }
-  
-  .footer-links a:hover {
-    background-color: hsl(0, 0%, 50%);
-  }
+}
+
+    .footer-links a:hover {
+        background-color: hsl(0, 0%, 50%);
+    }
 
 /* Booastrap override */
-.bg-primary {background-color: #002A8F !important;}
-.bg-secondary {background-color: #36508D !important; }
-.bg-info {background-color: #5B828E !important;}
+.bg-primary {
+    background-color: #002A8F !important;
+}
 
-.text-primary { color: #002A8F !important}
-.text-secondary { color: #CB1515 !important}
-.text-info { color: #333333 !important}
-.text-primary { color: #002A8F !important}
+.bg-secondary {
+    background-color: #36508D !important;
+}
 
-.fs-1 { font-size: 60px !important; }
-.fs-2 { font-size: 50px !important; }
-.navbar { 
+.bg-info {
+    background-color: #5B828E !important;
+}
+
+.text-primary {
+    color: #002A8F !important
+}
+
+.text-secondary {
+    color: #CB1515 !important
+}
+
+.text-info {
+    color: #333333 !important
+}
+
+.text-primary {
+    color: #002A8F !important
+}
+
+h1 {
+    color: #002A8F !important;
+}
+
+h2 {
+    color: #002A8F !important;
+}
+
+h3 { color: #CB1515 !important;
+}
+
+.btn-primary {
+    color:white;
+    background-color: #002A8F !important;
+}
+
+.fs-1 {
+    font-size: 60px !important;
+}
+
+.fs-2 {
+    font-size: 50px !important;
+}
+
+.navbar {
     border-bottom: #002A8F 2px solid;
     padding: 0;
 }
+
 .navbar-nav .nav-link {
     padding-left: 11px;
 }
+
 .nav-item a {
     padding-left: 10px;
 }
-.nav-item a:hover{
-    color:#002A8F !important;
-    background-color: #B3CC8E;
-    border-radius: 10px;
-}
+
+    .nav-item a:hover {
+        color: #002A8F !important;
+        background-color: #B3CC8E;
+        border-radius: 10px;
+    }
 
 /* PALETE ----------------  */
 
 .palete-colors {
-    color: #002A8F; color: #36508D;color: #4A5CA3;color: #7C8CC9;
-    color: #CB1515; color: #CC1A0F;color: #E9361E;color: #EA8363;
-    color: #FFFFFF; color: #D9D9D9;color: #7F7F7F;color: #333333;
-    color: #F5E6C7; color: #B3CC8E;color: #7A89A1;color: #69949C; 
-    color: #5B828E
+    color: #002A8F;color: #36508D;color: #4A5CA3;color: #7C8CC9;
+    color: #CB1515;    color: #CC1A0F;    color: #E9361E;    color: #EA8363;
+    color: #FFFFFF;    color: #D9D9D9;    color: #7F7F7F;    color: #333333;
+    color: #F5E6C7;
+    color: #B3CC8E;
+    color: #7A89A1;    color: #69949C;    color: #5B828E
 }
