@@ -142,20 +142,17 @@ footer {
     color: #002A8F !important
 }
 
-h1 {
-    color: #002A8F !important;
-}
-
-h2 {
-    color: #002A8F !important;
-}
-
-h3 { color: #CB1515 !important;
-}
+h1 { color: #002A8F !important;}
+h2 { color: #002A8F !important;}
+h3 { color: #CB1515 !important;}
 
 .btn-primary {
     color:white;
     background-color: #002A8F !important;
+}
+
+.d-block {
+    display: inline !important;
 }
 
 .fs-1 {
