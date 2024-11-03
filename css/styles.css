@@ -160,6 +160,11 @@ h3 {
   display: inline !important;
 }
 
+.btn-primary {
+    color: white;
+    background-color: #002A8F !important;
+}
+
 .fs-1 {
   font-size: 60px !important;
 }
