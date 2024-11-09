@@ -1,0 +1,123 @@
+{
+    "Cuba": {
+      "provincias": [
+        {
+          "nombre": "Pinar del Río",
+          "municipios": [
+            { "nombre": "Consolación del Sur", "cp": "20100" },
+            { "nombre": "Guane", "cp": "20200" },
+            { "nombre": "La Palma", "cp": "20300" },
+            { "nombre": "Los Palacios", "cp": "20400" },
+            { "nombre": "Mantua", "cp": "20500" },
+            { "nombre": "Minas de Matahambre", "cp": "20600" },
+            { "nombre": "Pinar del Río", "cp": "20100" },
+            { "nombre": "San Juan y Martínez", "cp": "20800" },
+            { "nombre": "San Luis", "cp": "20900" },
+            { "nombre": "Sandino", "cp": "21000" },
+            { "nombre": "Viñales", "cp": "21100" }
+          ]
+        },
+        {
+          "nombre": "Artemisa",
+          "municipios": [
+            { "nombre": "Alquízar", "cp": "22200" },
+            { "nombre": "Artemisa", "cp": "22500" },
+            { "nombre": "Bahía Honda", "cp": "22100" },
+            { "nombre": "Bauta", "cp": "22400" },
+            { "nombre": "Caimito", "cp": "22300" },
+            { "nombre": "Candelaria", "cp": "22600" },
+            { "nombre": "Guanajay", "cp": "22700" },
+            { "nombre": "Güira de Melena", "cp": "22800" },
+            { "nombre": "Mariel", "cp": "22900" },
+            { "nombre": "San Antonio de los Baños", "cp": "23000" }
+          ]
+        },
+        {
+          "nombre": "La Habana",
+          "municipios": [
+            { "nombre": "Arroyo Naranjo", "cp": "10900" },
+            { "nombre": "Boyeros", "cp": "10800" },
+            { "nombre": "Centro Habana", "cp": "10200" },
+            { "nombre": "Cerro", "cp": "10600" },
+            { "nombre": "Cotorro", "cp": "11000" },
+            { "nombre": "Diez de Octubre", "cp": "10400" },
+            { "nombre": "Guanabacoa", "cp": "10700" },
+            { "nombre": "Habana del Este", "cp": "11700" },
+            { "nombre": "Habana Vieja", "cp": "10100" },
+            { "nombre": "La Lisa", "cp": "11500" },
+            { "nombre": "Marianao", "cp": "11400" },
+            { "nombre": "Playa", "cp": "11300" },
+            { "nombre": "Plaza de la Revolución", "cp": "10300" },
+            { "nombre": "Regla", "cp": "11200" },
+            { "nombre": "San Miguel del Padrón", "cp": "11100" }
+          ]
+        },
+        {
+          "nombre": "Mayabeque",
+          "municipios": [
+            { "nombre": "Batabanó", "cp": "30100" },
+            { "nombre": "Bejucal", "cp": "30200" },
+            { "nombre": "Güines", "cp": "30300" },
+            { "nombre": "Jaruco", "cp": "30400" },
+            { "nombre": "Madruga", "cp": "30500" },
+            { "nombre": "Melena del Sur", "cp": "30600" },
+            { "nombre": "Nueva Paz", "cp": "30700" },
+            { "nombre": "Quivicán", "cp": "30800" },
+            { "nombre": "San José de las Lajas", "cp": "30900" },
+            { "nombre": "San Nicolás", "cp": "31000" },
+            { "nombre": "Santa Cruz del Norte", "cp": "31100" }
+          ]
+        },
+        {
+          "nombre": "Matanzas",
+          "municipios": [
+            { "nombre": "Calimete", "cp": "40100" },
+            { "nombre": "Cárdenas", "cp": "40200" },
+            { "nombre": "Ciénaga de Zapata", "cp": "40300" },
+            { "nombre": "Colón", "cp": "40400" },
+            { "nombre": "Jagüey Grande", "cp": "40500" },
+            { "nombre": "Jovellanos", "cp": "40600" },
+            { "nombre": "Limonar", "cp": "40700" },
+            { "nombre": "Los Arabos", "cp": "40800" },
+            { "nombre": "Martí", "cp": "40900" },
+            { "nombre": "Matanzas", "cp": "40100" },
+            { "nombre": "Perico", "cp": "41100" },
+            { "nombre": "Pedro Betancourt", "cp": "41200" },
+            { "nombre": "Unión de Reyes", "cp": "41300" }
+          ]
+        },
+        {
+          "nombre": "Villa Clara",
+          "municipios": [
+            { "nombre": "Caibarién", "cp": "50100" },
+            { "nombre": "Camajuaní", "cp": "50200" },
+            { "nombre": "Cifuentes", "cp": "50300" },
+            { "nombre": "Corralillo", "cp": "50400" },
+            { "nombre": "Encrucijada", "cp": "50500" },
+            { "nombre": "Manicaragua", "cp": "50600" },
+            { "nombre": "Placetas", "cp": "50700" },
+            { "nombre": "Quemado de Güines", "cp": "50800" },
+            { "nombre": "Ranchuelo", "cp": "50900" },
+            { "nombre": "Remedios", "cp": "51000" },
+            { "nombre": "Sagua la Grande", "cp": "51100" },
+            { "nombre": "Santa Clara", "cp": "50100" },
+            { "nombre": "Santo Domingo", "cp": "51300" }
+          ]
+        },
+        {
+          "nombre": "Sancti Spíritus",
+          "municipios": [
+            { "nombre": "Cabaiguán", "cp": "60100" },
+            { "nombre": "Fomento", "cp": "60200" },
+            { "nombre": "Jatibonico", "cp": "60300" },
+            { "nombre": "La Sierpe", "cp": "60400" },
+            { "nombre": "Sancti Spíritus", "cp": "60100" },
+            { "nombre": "Taguasco", "cp": "60600" },
+            { "nombre": "Trinidad", "cp": "60700" },
+            { "nombre": "Yaguajay", "cp": "60800" }
+          ]
+        }
+      ]
+    }
+  }
+  

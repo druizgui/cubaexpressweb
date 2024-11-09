@@ -15,6 +15,29 @@ function hide(obj) {
     el.style.display = 'none';
 }
 
+function filterMunicipio(provinciaSelect, municipioSelect) {
+    var provinciaSeleccionada = provinciaSelect.value;
+    if (provinciaSeleccionada == "") return;
+
+    // Limpiar opciones de municipio
+    municipioSelect.innerHTML = '<option value="" disabled selected>Selecciona un municipio</option>';
+
+    // Obtener los municipios de la provincia seleccionada
+    var municipios = municipiosPorProvincia[provinciaSeleccionada];
+    
+    // Agregar cada municipio como una opción en el select
+    municipios.forEach(municipio => {
+        const option = document.createElement("option");
+        option.value = municipio;
+        option.textContent = municipio;
+        municipioSelect.appendChild(option);
+    });
+
+    // Habilitar el select de municipios
+    municipioSelect.disabled = false;
+}
+
+
 /*GoogleAnalytics*/
 window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }

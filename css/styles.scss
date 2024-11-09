@@ -20,7 +20,8 @@ body, html {
 .content-container {
   height: calc(100vh - 100px); /* Ajusta el tamaño del contenedor */
   overflow-y: auto;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+  margin: 10px 4px 10px 4px;
 }
 
 .icon-main {
@@ -141,6 +142,12 @@ footer {
   }
 
 /* Booastrap override */
+
+.accordion-button {
+  transition: none;
+  background-color: #002A8F;
+  color: $color-white;
+}
 .bg-primary {
   background-color: #002A8F !important;
 }
@@ -166,11 +173,14 @@ footer {
 }
 
 .text-primary {
-  color: #002A8F !important
+  color: $color-p1 !important
 }
+
+a { color: $color-p1; text-decoration: none;}
 
 h1 {
   color: #002A8F !important;
+  padding-left: 10px;
 }
 
 h2 {
@@ -200,11 +210,15 @@ h3 { color: #CB1515 !important;
 }
 
 
-
-.form-group .required.form-label:after {
+.form-label.required:after {
   content: "*";
   color: red;
 }
+
+// .form-group .required.form-label:after {
+//   content: "*";
+//   color: red;
+// }
 //  .nav-item a:hover {
 //   }
 
