@@ -26,7 +26,6 @@
 </head>
 
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
             <div class="navbar-brand">
@@ -53,32 +52,84 @@
     </nav>
 
     <div class="content-container">
-        <h1>Envios</h1>
+        <h1>Ofertas</h1>
 
-        <div class="container">
-            <ul class="list-menu">
-                <li class="list-menu-item">
-                    <a href="envioNuevo.html">
-                        <i class="fa-regular fa-paper-plane"></i>Enviar
-                    </a>
-                </li>
-                <li class="list-menu-item">
-                    <a href="infoenvios.html">
-                        <i class="fa-solid fa-circle-info"></i>Información
-                    </a>
-                </li>
-                <li class="list-menu-item">
-                    <a href="index.html">
-                        <i class="fa-solid fa-magnifying-glass-dollar"></i>Ofertas
-                    </a>
-                </li>
-                <li class="list-menu-item">
-                    <a href="index.html">
-                        <i class="fa-solid fa-backward"></i>Volver
-                    </a>
-                </li>
-            </ul>
+        <a class="my-jquery-collapse btn btn-primary" data-my-target="#collapse-header-nav" role="button"
+            aria-expanded="true" aria-controls="collapse-header-nav" style="display: none;">
+            Drop-Down
+        </a>
+        <div class="d-none" id="collapse-header-nav">
+            <div class="card">
+                <div class="accordion" id="accordionHelp">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                MALETAS DE 23 KG DE MISCELANEA
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionHelp">
+                            <div class="accordion-body">
+                                <p>Envío de maletas de 23 kg donde puede mezclar aseo,  comida, medicamentos, ropa y zapatos.</p>
+                                <p>Se tarda más de <span class="fw-bold">60 días laborables</span></p>
+                                <p>Incluye obtención, legalización en <span class="fw-bold">MINREX y Consulado Español
+                                    </span>, y mensajería hasta Madrid.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Servicio Express - 330 €
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionHelp">
+                            <div class="accordion-body">
+                                <p>Precio por documento</p>
+                                Se tramitan:
+                                <ul>
+                                    <li>Antecedentes penales</li>
+                                    <li>Certificados de nacimiento</li>
+                                    <li>Matrimonio</li>
+                                    <li>Divorcios</li>
+                                    <li>Estado conyugal</li>
+                                    <li>Fe de soltería</li>
+                                </ul>
+                                <p>Tarda unos <span class="fw-bold">45 días laborables</span> (solo hasta MINREX son 3
+                                    semanas)</p>
+                                <p>Incluye obtención, legalización en <span class="fw-bold">MINREX y Consulado Español
+                                    </span>, y mensajería hasta
+                                    Madrid.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Otros Documentos
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionHelp">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Trámites de extranjería en Madrid capital.</li>
+                                    <li> Trámites de visados a Estados Unidos.</li>
+                                </ul>
+                                <p>Consulte sobre otro tipo de documentación en nuestra página de
+                                    <a href="contacto.html">Contacto</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 
     <div id="cookie-banner"
@@ -113,5 +164,15 @@
             crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E7PV4BMC4"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        $(document).ready(() => {
+            const $ddBtn = $('.my-jquery-collapse')
+            const $dd = $($ddBtn.data('my-target'))
+            $dd.toggleClass('d-none')
+            $ddBtn.on('click', () => {
+
+            })
+        })
+    </script>
 </body>
 </html>

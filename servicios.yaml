@@ -1,0 +1,15 @@
+- title: Medicamentos y material sanitario
+  desc:
+  type: Service
+  priority: Ordinaria
+- title:
+  desc:
+  type: Offer
+  priority: Urgente
+  items_type: 
+    - Medicamentos
+    - Pañales
+
+  Kg_hasta: 20
+  
+  

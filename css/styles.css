@@ -3,15 +3,14 @@ body, html {
   background-color: #FFFFFF; /* Blanco */
   height: calc(100vh - 17px);
   margin: 0;
-  margin-bottom: -10px;
+  padding-bottom: 10px;
   font-family: "Roboto", sans-serif;
 }
 
 .content-container {
   height: calc(100vh - 100px); /* Ajusta el tamaño del contenedor */
   overflow-y: auto;
-  padding-bottom: 10px;
-  margin: 10px 4px 10px 4px;
+  margin: 10px 4px 30px 4px;
 }
 
 .icon-main {
@@ -130,6 +129,10 @@ footer {
 }
 
 /* Booastrap override */
+.card {
+  min-width: 280px;
+}
+
 .accordion-button {
   transition: none;
   background-color: #002A8F;
@@ -138,10 +141,17 @@ footer {
 
 .bg-primary {
   background-color: #002A8F !important;
+  color: #FFFFFF;
 }
 
 .bg-secondary {
-  background-color: #36508D !important;
+  background-color: #5B828E !important;
+  color: #FFFFFF !important;
+}
+
+.bg-danger {
+  background-color: #CB1515 !important;
+  color: #FFFFFF;
 }
 
 .bg-info {
@@ -180,6 +190,11 @@ h2 {
 
 h3 {
   color: #CB1515 !important;
+}
+
+h4 {
+  color: #7F7F7F !important;
+  font-size: 22px;
 }
 
 .d-block {

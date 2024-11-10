@@ -1,0 +1,41 @@
+[
+  {
+    "title": "titulo",
+    "desc": "descripción",
+    "priority": "Prioridad",
+    "hasta_kg": 23,
+    "types": [      "Alimentos",      "Medicinas",      "Aseo",      "Comida",      "Ropa",      "teléfono Móvil",      "Tablet",      "Ordenador portátil",      "Material escolar"
+    ],
+    "container": [
+      "Maleta",
+      "caja",
+      "otro"
+    ],
+    "prices": [
+      {
+        "La Habana": [
+          {
+            "peso": "40",
+            "precio": "220 €"
+          },
+          {
+            "peso": "50",
+            "precio": "250 €"
+          }
+        ]
+      },
+      {
+        "Provincias": [
+          {
+            "peso": "40",
+            "precio": "220 €"
+          },
+          {
+            "peso": "50",
+            "precio": "250 €"
+          }
+        ]
+      }
+    ]
+  }
+]
