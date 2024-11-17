@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>PaCuba - Nuevo envío</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Roboto -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid ">
+            <div class="navbar-brand">
+                <a href="index.html"><img src="img/logo.png" alt="pacuba" class="ms-1" /></a>
+            </div>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse fs-5" id="collapseNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item text-light">
+                        <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ayuda.html">Ayuda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-container p-4 mb-6">
+        <h1>Enviar un paquete</h1>
+        <p>Completa la información de envío:</p>
+
+
+
+        <form id="formulario-envio" class="row g-3 needs-validation" novalidate>
+            
+            <div id="paso-1" class="step-section active">
+                <h3>Apartado Remitente</h3>
+                
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+                        <label for="remitente-nombre" class="form-label required">Nombre</label>
+                        <input type="text" class="form-control" id="remitente-nombre" placeholder="Nombre" required>
+                        <div class="valid-feedback">Correcto!</div>
+                        <div class="invalid-feedback">Debes rellenar el nombre</div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="remitente-apellidos" class="form-label required">Apellidos</label>
+                        <input type="text" class="form-control" id="remitente-apellidos" placeholder="Apellidos"  required>
+                        <div class="valid-feedback">Correcto!</div>
+                        <div class="invalid-feedback">Debes rellenar el nombre</div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="remitente-direccion" class="form-label required">Dirección</label>
+                        <input type="text" class="form-control" id="remitente-direccion"
+                            placeholder="Calle, nº, piso, entre calles" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="remitente-provincia" class="form-label required">Provincia</label>
+                        <select class="form-select" id="remitente-provincia" required>
+                            <option value="" disabled selected>Selecciona una provincia</option>
+                            <option value="Pinar del Río">Pinar del Río</option>
+                            <option value="Artemisa">Artemisa</option>
+                            <option value="La Habana">La Habana</option>
+                            <option value="Mayabeque">Mayabeque</option>
+                            <option value="Matanzas">Matanzas</option>
+                            <option value="Cienfuegos">Cienfuegos</option>
+                            <option value="Villa Clara">Villa Clara</option>
+                            <option value="Sancti Spíritus">Sancti Spíritus</option>
+                            <option value="Ciego de Ávila">Ciego de Ávila</option>
+                            <option value="Camagüey">Camagüey</option>
+                            <option value="Las Tunas">Las Tunas</option>
+                            <option value="Granma">Granma</option>
+                            <option value="Holguín">Holguín</option>
+                            <option value="Santiago">Santiago</option>
+                            <option value="Guantánamo">Guantánamo</option>
+                            <option value="Isla de la Juventud">Isla de la Juventud</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="remitente-municipio" class="form-label required">Municipio</label>
+                        <select class="form-select" id="remitente-municipio" required>
+                            <option value="" disabled selected>Selecciona un municipio</option>
+                            <!-- Los municipios cambiarán dinámicamente según la provincia -->
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="remitente-tipo-documento" class="form-label required">Tipo de documento</label>
+                        <select class="form-select" id="remitente-tipo-documento" required>
+                            <option value="" disabled selected>Selecciona tipo de documento</option>
+                            <option value="DNI">DNI</option>
+                            <option value="NIE">NIE</option>
+                            <option value="Pasaporte">Pasaporte</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="remitente-documento" class="form-label required">Número de documento</label>
+                        <input type="text" class="form-control" id="remitente-documento" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="remitente-telefono" class="form-label required">Teléfono de contacto</label>
+                        <input type="tel" class="form-control" id="remitente-telefono" placeholder="Formato: +34 6xxxxxxx"
+                            required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="remitente-correo" class="form-label required">Correo electrónico</label>
+                        <input type="email" name="email" placeholder="email" class="form-control email" id="remitente-correo" placeholder="ejemplo@correo.com"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> 
+                        <div class="valid-feedback">Correcto!</div>
+                        <div class="invalid-feedback">El email no es correcto.</div>                       
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="siguientePaso()">Siguiente</button>
+            </div>
+
+            <div id="paso-2" class="step-section hide">
+                <!-- Apartado Destinatario -->
+                <h3>Apartado Destinatario</h3>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="destinatario-nombre" class="form-label required">Nombre</label>
+                        <input type="text" class="form-control" id="destinatario-nombre" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="destinatario-apellidos" class="form-label required">Apellidos</label>
+                        <input type="text" class="form-control" id="destinatario-apellidos" required>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="destinatario-direccion" class="form-label required">Dirección</label>
+                        <input type="text" class="form-control" id="destinatario-direccion"
+                            placeholder="Calle, nº, piso, entre calles" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="destinatario-provincia" class="form-label required">Provincia</label>
+                        <select class="form-select" id="destinatario-provincia" required>
+                            <option value="" disabled selected>Selecciona una provincia</option>
+                            <option value="Pinar del Río">Pinar del Río</option>
+                            <option value="Artemisa">Artemisa</option>
+                            <option value="La Habana">La Habana</option>
+                            <option value="Mayabeque">Mayabeque</option>
+                            <option value="Matanzas">Matanzas</option>
+                            <option value="Cienfuegos">Cienfuegos</option>
+                            <option value="Villa Clara">Villa Clara</option>
+                            <option value="Sancti Spíritus">Sancti Spíritus</option>
+                            <option value="Ciego de Ávila">Ciego de Ávila</option>
+                            <option value="Camagüey">Camagüey</option>
+                            <option value="Las Tunas">Las Tunas</option>
+                            <option value="Granma">Granma</option>
+                            <option value="Holguín">Holguín</option>
+                            <option value="Santiago">Santiago</option>
+                            <option value="Guantánamo">Guantánamo</option>
+                            <option value="Isla de la Juventud">Isla de la Juventud</option>
+                            <!-- Agrega más provincias -->
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="destinatario-municipio" class="form-label required">Municipio</label>
+                        <select class="form-select" id="destinatario-municipio" required>
+                            <option value="" disabled selected>Selecciona municipio</option>
+                            <!-- Los municipios cambiarán dinámicamente según la provincia -->
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="destinatario-tipo-documento" class="form-label required">Tipo de documento</label>
+                        <select class="form-select" id="destinatario-tipo-documento" required>
+                            <option value="" disabled selected>Selecciona tipo documento</option>
+                            <option value="DNI">DNI</option>
+                            <option value="NIE">NIE</option>
+                            <option value="Pasaporte">Pasaporte</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="destinatario-documento" class="form-label required">Número de documento</label>
+                        <input type="text" class="form-control" id="destinatario-documento" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="destinatario-telefono" class="form-label required">Teléfono de contacto</label>
+                        <input type="tel" class="form-control" id="destinatario-telefono"
+                            placeholder="Formato: +53 123456789" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="destinatario-correo" class="form-label required">Correo electrónico</label>
+                        <input type="email" class="form-control" id="destinatario-correo" placeholder="ejemplo@correo.com"
+                            required>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-secondary" onclick="pasoAnterior()">Atrás</button>
+                <button type="button" class="btn btn-primary" onclick="siguientePaso()">Siguiente</button>
+            </div>
+
+            <!-- Paso 3: Tipo de Envío -->
+            <div id="paso-3" class="step-section">
+                <h3>Tipo de Envío</h3>
+                <div class="mb-3">
+                    <label class="form-label">Seleccione el tipo de envío</label>
+                    <select class="form-select" id="tipo-envio" required>
+                        <option value="" disabled selected>Selecciona el tipo de envío</option>
+                        <option value="normal">Normal</option>
+                        <option value="urgente">Urgente</option>
+                        <option value="express">Express</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-secondary" onclick="pasoAnterior()">Atrás</button>
+                <button type="button" class="btn btn-primary" onclick="siguientePaso()">Siguiente</button>
+            </div>
+
+            <!-- Paso 4: Finalizar -->
+            <div id="paso-4" class="step-section">
+                <h3>Resumen de Envío</h3>
+                <p><strong>Remitente:</strong> <span id="resumen-remitente"></span></p>
+                <p><strong>Destinatario:</strong> <span id="resumen-destinatario"></span></p>
+                <p><strong>Tipo de Envío:</strong> <span id="resumen-tipo-envio"></span></p>
+                <button type="button" class="btn btn-secondary" onclick="pasoAnterior()">Atrás</button>
+                <button type="submit" class="btn btn-success">Finalizar</button>
+            </div>
+
+            <!-- <button type="submit" class="btn btn-primary mt-3">Enviar</button> -->
+        </form>
+
+<!-- 
+        <form class="row g-3 needs-validation form-group" novalidate>
+            <div class="col-md-4 mb-2">
+                <label for="validationCustom01" class="required form-label">Email</label>
+                <input type="email" name="email" placeholder="email" class="form-control email" id="validationCustom00"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <div class="valid-feedback">Correcto!</div>
+                <div class="invalid-feedback">El email no es correcto.</div>
+            </div>
+            <div class="col-md-4 mb-2">
+                <label for="validationCustom01" class="required form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                <div class="valid-feedback">Correcto!</div>
+                <div class="invalid-feedback">Debes rellenar el nombre</div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="required form-label">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">State</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05">
+                <div class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form> -->
+
+        <a href="index.html" class="btn btn-info btn-primary float-end m-3" role="button">
+            <i class="fa-solid fa-backward"></i> Volver
+        </a>
+    </div>
+
+    <div id="cookie-banner"
+        style="display:none; background-color: #333; color: white; padding: 15px; position: fixed; bottom: 47px; text-align: center;">
+        Utilizamos cookies propias y de terceros para analizar nuestros servicios y mostrarte la información acorde a
+        tus preferencias.
+        Al hacer clic en "Aceptar todo", acepta el uso de TODAS las cookies. <a href="politica-de-cookies.htm"
+            style="color: #4A90E2;">Leer más</a>.
+        <button id="accept-cookies" onClick="hide('cookie-banner')"
+            style="margin-left: 10px; padding: 5px 10px; background-color: #4A90E2; color: white; border: none; cursor: pointer;">
+            Aceptar
+        </button>
+    </div>
+    <footer>
+        <div class="container footer-content">
+            <div class="text-left scico">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f fs-4"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+
+            <div class="footer-links  text-right">
+                <a href="contacto.html">Contacta</a>
+                <a href="nosotros.html">Nosotros</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>(function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+    <script src="js/scripts.js"></script>
+    <script>
+        // Objeto con los municipios por provincia
+        const municipiosPorProvincia = {
+            "Pinar del Río": ["Consolación del Sur", "Guane", "La Palma", "Los Palacios", "Mantua", "Minas de Matahambre", "Pinar del Río", "San Juan y Martínez", "San Luis", "Sandino", "Viñales"],
+            "Artemisa": ["Alquízar", "Artemisa", "Bahía Honda", "Bauta", "Caimito", "Candelaria", "Guanajay", "Güira de Melena", "Mariel", "San Antonio de los Baños", "San Cristóbal"],
+            "La Habana": ["Arroyo Naranjo", "Boyeros", "Centro Habana", "Cerro", "Cotorro", "Diez de Octubre", "Guanabacoa", "La Habana del Este", "La Habana Vieja", "La Lisa", "Marianao", "Playa", "Plaza de la Revolución", "Regla", "San Miguel del Padrón"],
+            "Mayabeque": ["Batabanó", "Bejucal", "Güines", "Jaruco", "Madruga", "Melena del Sur", "Nueva Paz", "Quivicán", "San José de las Lajas", "San Nicolás", "Santa Cruz del Norte"],
+            "Matanzas": ["Calimete", "Cárdenas", "Ciénaga de Zapata", "Colón", "Jagüey Grande", "Jovellanos", "Limonar", "Los Arabos", "Martí", "Matanzas", "Pedro Betancourt", "Perico", "Unión de Reyes"],
+            "Cienfuegos": ["Abreus", "Aguada de Pasajeros", "Cienfuegos", "Cruces", "Cumanayagua", "Lajas", "Palmira", "Rodas"],
+            "Villa Clara": ["Caibarién", "Camajuaní", "Cifuentes", "Corralillo", "Encrucijada", "Manicaragua", "Placetas", "Quemado de Güines", "Ranchuelo", "San Juan de los Remedios", "Sagua la Grande", "Santa Clara", "Santo Domingo"],
+            "Sancti Spíritus": ["Cabaiguán", "Fomento", "Jatibonico", "La Sierpe", "Sancti Spíritus", "Taguasco", "Trinidad", "Yaguajay"],
+            "Ciego de Ávila": ["Baraguá", "Bolivia", "Chambas", "Ciego de Ávila", "Ciro Redondo", "Florencia", "Majagua", "Morón", "Primero de Enero", "Venezuela"],
+            "Camagüey": ["Camagüey", "Carlos M. de Céspedes", "Esmeralda", "Florida", "Guáimaro", "Jimaguayú", "Minas", "Najasa", "Nuevitas", "Santa Cruz del Sur", "Sibanicú", "Sierra de Cubitas", "Vertientes"],
+            "Las Tunas": ["Amancio", "Colombia", "Jesús Menéndez", "Jobabo", "Las Tunas", "Majibacoa", "Manatí", "Puerto Padre"],
+            "Holguín": ["Antilla", "Báguanos", "Banes", "Cacocum", "Calixto García", "Cueto", "Frank País", "Gibara", "Holguín", "Mayarí", "Moa", "Rafael Freyre", "Sagua de Tánamo", "Urbano Noris"],
+            "Granma": ["Bartolomé Masó", "Bayamo", "Buey Arriba", "Campechuela", "Cauto Cristo", "Guisa", "Jiguaní", "Manzanillo", "Media Luna", "Niquero", "Pilón", "Río Cauto", "Yara"],
+            "Santiago de Cuba": ["Contramaestre", "Guamá", "Mella", "Palma Soriano", "San Luis", "Santiago de Cuba", "Segundo Frente", "Songo-La Maya", "Tercer Frente"],
+            "Guantánamo": ["Baracoa", "Caimanera", "El Salvador", "Guantánamo", "Imías", "Maisí", "Manuel Tames", "Niceto Pérez", "San Antonio del Sur", "Yateras"],
+            "Isla de la Juventud": ["Isla de la Juventud"]
+        };
+
+        // Elementos select para provincia y municipio
+        const provinciaSelect = document.getElementById("remitente-provincia");
+        const provinciaDestSelect = document.getElementById("destinatario-provincia");
+        const municipioSelect = document.getElementById("remitente-municipio");
+        const municipioDestSelect = document.getElementById("destinatario-municipio");
+        // debugger;
+
+        $('#remitente-provincia').change(function(){
+            filterMunicipio(provinciaSelect, municipioSelect);
+        });
+
+        $('#destinatario-provincia').change(function(){
+            filterMunicipio(provinciaDestSelect, municipioDestSelect);
+        });
+       
+        let pasoActual = 1;
+
+        function mostrarPaso(paso) {
+            // Ocultar todos los pasos
+            document.querySelectorAll('.step-section').forEach(section => section.classList.remove('active'));
+
+            // Mostrar el paso actual
+            document.getElementById(`paso-${paso}`).classList.add('active');
+        }
+
+        function siguientePaso() {
+            // Guardar datos en el resumen si es el último paso
+            if (pasoActual === 3) {
+                document.getElementById("resumen-remitente").textContent = `${document.getElementById("remitente-nombre").value} ${document.getElementById("remitente-apellidos").value}, ${document.getElementById("remitente-direccion").value}`;
+                document.getElementById("resumen-destinatario").textContent = `${document.getElementById("destinatario-nombre").value} ${document.getElementById("destinatario-apellidos").value}, ${document.getElementById("destinatario-direccion").value}`;
+                document.getElementById("resumen-tipo-envio").textContent = document.getElementById("tipo-envio").value;
+            }
+
+            // Avanzar al siguiente paso
+            pasoActual++;
+            mostrarPaso(pasoActual);
+        }
+
+        function pasoAnterior() {
+            // Retroceder al paso anterior
+            pasoActual--;
+            mostrarPaso(pasoActual);
+        }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E7PV4BMC4"></script>
+   
+
+</body>
+
+</html>

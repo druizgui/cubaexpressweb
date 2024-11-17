@@ -36,7 +36,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light">
-        <div class="container-fluid ">
+        <div class="container-fluid">
             <div class="navbar-brand">
                 <a href="index.html"><img src="img/logo.png" alt="pacuba" class="ms-1" /></a>
             </div>
@@ -65,26 +65,115 @@
 
     <div class="content-container">
         <h1>Servicios</h1>
-        <!-- <h2>Datos necesarios</h2>
-        <p>Para realizar un envío es necesario rellenar los datos del remitente y del destinatario.</p>
-        <h3>Datos Del remitente</h3>
-        <ul>
-            <li>Nombre y Apellidos</li>
-            <li>email</li>
-            <li>Dirección completa (calle, nº, piso, entre calles, municipio y provincia)</li>
-            <li>DNI, NIE o PASAPORTE</li>
-            <li>Teléfono de contacto</li>
-        </ul>
 
-        <h3>Datos Del destinatario</h3>
-        <ul>
-            <li>Nombre y Apellidos</li>
-            <li>Dirección completa (calle, nº, piso, entre calles, municipio y provincia)</li>
-            <li>Carnet de Identidad</li>
-            <li>Teléfono de contacto</li>
-        </ul> -->
+        <div class="container row">
+            <div class="col-md-3 mb-3">
+                <label for="filtroofertas" class="form-label fw-bold">Filtrar por:</label>
+                <select class="form-select" id="filtroofertas" required>
+                    <option value="" selected>Selecciona un filtro</option>
+                    <option value="urg">Urgente</option>
+                    <option value="ord">Ordinario</option>
+                    <option value="ofe">Ofertas</option>
+                </select>
+            </div>
+        </div>
 
-        <div class="container d-flex flex-wrap">
+        <div class="container d-flex flex-wrap" data-type="urg">
+
+            <div class="card m-2" data-type="ofe">
+                <a name="ofe-maletas"></a>
+                <h5 class="card-header bg-info">Oferta: Maletas Miscelanea 23Kg</h5>
+                <div class="card-body">
+                    <p class="card-text">Envío de maletas de 23 kg donde puede mezclar <span class="fw-bold">aseo,
+                            comida, medicamentos, ropa y zapatos</span>.</p>
+                    <ul>
+                        <li><span class="fw-bold me-1">Límite de peso:</span> 20 Kg</li>
+                        <li><span class="fw-bold me-1">Recogida:</span>Aeropuerto de La Habana, Varadero, Camagüey,
+                            Holguin y Santiago</li>
+                        <li><span class="fw-bold me-1">Salida:</span>Todos los domingos</li>
+                        <li><span class="fw-bold me-1">Recogida hasta:</span>19h del Jueves</li>
+                        <li><span class="fw-bold me-1">Entrega aproximada:</span>5-6 días</li>
+                    </ul>
+                    <h4>Precios</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-center" style="width: 120px;">Precios</th>
+                                <th scope="col" class="text-center">La Habana</th>
+                                <th scope="col" class="text-center">Provincias</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Envío</th>
+                                <td class="text-center">280€</td>
+                                <td class="text-center">310€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Embalaje</th>
+                                <td class="text-center">10€</td>
+                                <td class="text-center">10€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Entrega a casa</th>
+                                <td class="text-center">20€</td>
+                                <td class="text-center"> No disponible </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="mailto:mandalopacuba@gmail.com?subject=Oferta%20maletas-23Kg"
+                        class="btn btn-primary float-end">Contacta</a>
+                </div>
+            </div>
+            <div class="card m-2" data-type="ofe">
+                <a name="ofe-maletas-misc"></a>
+                <h5 class="card-header bg-info">Oferta: Maletas 1ª necesidad</h5>
+                <div class="card-body">
+                    <p class="card-text">Envío de maletas de 23 kg donde puede mezclar <span class="fw-bold">aseo,
+                            comida, medicamentos</span>.</p>
+                    <ul>
+                        <li><span class="fw-bold me-1">Límite de peso:</span> 20 Kg</li>
+                        <li><span class="fw-bold me-1">Recogida:</span>Aeropuerto de La Habana, Varadero, Camagüey,
+                            Holguin y Santiago</li>
+                        <li><span class="fw-bold me-1">Salida Habana:</span>Cada semana</li>
+                        <li><span class="fw-bold me-1">Salida Provincias:</span>Cada 2 semanas</li>
+                        <li><span class="fw-bold me-1">Recogida hasta:</span>19h del Jueves</li>
+                        <li><span class="fw-bold me-1">Entrega aproximada:</span>5-6 días</li>
+                    </ul>
+                    <h4>Precios</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-center" style="width: 120px;">Precios</th>
+                                <th scope="col" class="text-center">La Habana</th>
+                                <th scope="col" class="text-center">Provincias</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Envío</th>
+                                <td class="text-center">250€</td>
+                                <td class="text-center">270€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Embalaje</th>
+                                <td class="text-center">10€</td>
+                                <td class="text-center">10€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Entrega a casa</th>
+                                <td class="text-center">20€</td>
+                                <td class="text-center"> No disponible </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="mailto:mandalopacuba@gmail.com?subject=Oferta%20maletas-23Kg"
+                        class="btn btn-primary float-end">Contacta</a>
+                </div>
+            </div>
+
             <div class="card m-2">
                 <a name="svc-urg-movil"></a>
                 <h5 class="card-header bg-danger">Teléfono móvil - Urgente</h5>
@@ -128,7 +217,7 @@
                 </div>
             </div>
 
-            <div class="card m-2">
+            <div class="card m-2" data-type="urg">
                 <a name="svc-urg-laptop"></a>
                 <h5 class="card-header bg-danger">Portátil o tablet - Urgente</h5>
                 <div class="card-body">
@@ -177,7 +266,7 @@
                 </div>
             </div>
 
-            <div class="card m-2">
+            <div class="card m-2" data-type="urg">
                 <a name="svc-urg-medica"></a>
                 <h5 class="card-header bg-danger">Medicamentos - Urgente</h5>
                 <div class="card-body">
@@ -225,7 +314,7 @@
                 </div>
             </div>
 
-            <div class="card m-2">
+            <div class="card m-2" data-type="urg">
                 <a name="svc-urg-doc"></a>
                 <h5 class="card-header bg-danger">Documentos - Urgente</h5>
                 <div class="card-body">
@@ -273,7 +362,50 @@
                 </div>
             </div>
 
-            <div class="card m-2">
+            <div class="card m-2" data-type="urg">
+                <a name="svc-urg-coche"></a>
+                <h5 class="card-header bg-danger">Piezas vehículo - Urgente</h5>
+                <div class="card-body">
+                    <p class="card-text">Envío de piezas de coche o moto.</p>
+                    <ul>
+                        <li><span class="fw-bold me-1">Recogida:</span> Vedado, La Habana</li>
+                        <li><span class="fw-bold me-1">Salida:</span>Todos los domingos</li>
+                        <li><span class="fw-bold me-1">Recogida hasta:</span>19h del Jueves</li>
+                        <li><span class="fw-bold me-1">Entrega aproximada:</span>3-5 días</li>
+                    </ul>
+                    <h4>Precios</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-center" style="width: 150px;">Precios</th>
+                                <th scope="col" class="text-center">Habana</th>
+                                <th scope="col" class="text-center">Provincias</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">cada Kilo</th>
+                                <td class="text-center">20€</td>
+                                <td class="text-center">40€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Entrega casa</th>
+                                <td class="text-center">+10-15 €</td>
+                                <td class="text-center">+20€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>El precio <span class="fw-bold">"Entrega casa"</span> para Habana Centro: 10€ y para la
+                        periferia: 15 €</p>
+                    <p>Este envío se hace a través de las estaciones de autobuses. Sin el servicio de <span
+                            class="fw-bold">"Entrega casa"</span>,
+                        se recoge la estación correspondiente el día y a la hora indicada por nuestro representante.</p>
+                    <a href="mailto:mandalopacuba@gmail.com?subject=Envio%20Documentos-urgente"
+                        class="btn btn-primary float-end">Contacta</a>
+                </div>
+            </div>
+
+            <div class="card m-2" data-type="ord">
                 <a name="svc-ord-medica"></a>
                 <h5 class="card-header bg-primary">Medicamentos - Ordinario</h5>
                 <div class="card-body">
@@ -328,7 +460,7 @@
             
 
 
-            <div class="card m-2">
+            <div class="card m-2" data-type="ord">
                 <a name="svc-ord-paquete"></a>
                 <h5 class="card-header bg-primary">Paquetes - Ordinario</h5>
                 <div class="card-body">
@@ -389,44 +521,9 @@
                         class="btn btn-primary float-end">Contacta</a>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="card m-2">
+            <div class="card m-2" data-type="ord">
                 <a name="svc-ord-maritimo"></a>
-                <h5 class="card-header">Marítimo - Ordinario</h5>
+                <h5 class="card-header bg-primary">Marítimo - Ordinario</h5>
                 <div class="card-body">
                     <p class="card-text">Envío de medicamentos y material sanitario. Se incluyen los pañales para
                         adultos.
@@ -475,28 +572,6 @@
                         class="btn btn-primary float-end">Contacta</a>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
     </div>
     <div id="cookie-banner"
@@ -518,7 +593,7 @@
             </div>         -->
             <div class="text-left scico">
                 <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f fs-4"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
 
             <div class="footer-links  text-right">
@@ -535,6 +610,19 @@
         crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E7PV4BMC4"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        document.getElementById('filtroofertas').addEventListener('change', function () {
+            const selectedType = this.value; // Obtiene el valor seleccionado del select
+            const boxes = document.querySelectorAll('.card'); // Selecciona todas las capas
+            boxes.forEach(box => {
+                if (selectedType === "" || box.dataset.type === selectedType) {
+                box.classList.remove('d-none'); // Muestra las capas que coinciden
+                } else {
+                box.classList.add('d-none'); // Oculta las capas que no coinciden
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -60,271 +60,23 @@
     </nav>
 
     <div class="content-container p-4 mb-6">
-        <h1>Enviar un paquete</h1>
-        <p>Completa la información de envío:</p>
+        <div class="container">
+            <h1>Enviar un paquete</h1>
+            <p>Completa la información de envío:</p>
+            <h2>Datos necesarios para el envío</h2>
+            <ul>
+                <li>Correo electrónico</li>
+                <li>Nombre y apellidos</li>
+                <li>Dirección completa (calle, nº, piso, entre calles, municipio y provincia)</li>
+                <li>DNI, NIE o PASAPORTE</li>
+                <li>Teléfono de contacto</li>
+                <li>Tipo de envío</li>
+            </ul>
 
-
-
-        <form id="formulario-envio" class="row g-3 needs-validation" novalidate>
-            
-            <div id="paso-1" class="step-section active">
-                <h3>Apartado Remitente</h3>
-                
-                <div class="row">
-
-                    <div class="col-md-6 mb-3">
-                        <label for="remitente-nombre" class="form-label required">Nombre</label>
-                        <input type="text" class="form-control" id="remitente-nombre" placeholder="Nombre" required>
-                        <div class="valid-feedback">Correcto!</div>
-                        <div class="invalid-feedback">Debes rellenar el nombre</div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="remitente-apellidos" class="form-label required">Apellidos</label>
-                        <input type="text" class="form-control" id="remitente-apellidos" placeholder="Apellidos"  required>
-                        <div class="valid-feedback">Correcto!</div>
-                        <div class="invalid-feedback">Debes rellenar el nombre</div>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                        <label for="remitente-direccion" class="form-label required">Dirección</label>
-                        <input type="text" class="form-control" id="remitente-direccion"
-                            placeholder="Calle, nº, piso, entre calles" required>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="remitente-provincia" class="form-label required">Provincia</label>
-                        <select class="form-select" id="remitente-provincia" required>
-                            <option value="" disabled selected>Selecciona una provincia</option>
-                            <option value="Pinar del Río">Pinar del Río</option>
-                            <option value="Artemisa">Artemisa</option>
-                            <option value="La Habana">La Habana</option>
-                            <option value="Mayabeque">Mayabeque</option>
-                            <option value="Matanzas">Matanzas</option>
-                            <option value="Cienfuegos">Cienfuegos</option>
-                            <option value="Villa Clara">Villa Clara</option>
-                            <option value="Sancti Spíritus">Sancti Spíritus</option>
-                            <option value="Ciego de Ávila">Ciego de Ávila</option>
-                            <option value="Camagüey">Camagüey</option>
-                            <option value="Las Tunas">Las Tunas</option>
-                            <option value="Granma">Granma</option>
-                            <option value="Holguín">Holguín</option>
-                            <option value="Santiago">Santiago</option>
-                            <option value="Guantánamo">Guantánamo</option>
-                            <option value="Isla de la Juventud">Isla de la Juventud</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="remitente-municipio" class="form-label required">Municipio</label>
-                        <select class="form-select" id="remitente-municipio" required>
-                            <option value="" disabled selected>Selecciona un municipio</option>
-                            <!-- Los municipios cambiarán dinámicamente según la provincia -->
-                        </select>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="remitente-tipo-documento" class="form-label required">Tipo de documento</label>
-                        <select class="form-select" id="remitente-tipo-documento" required>
-                            <option value="" disabled selected>Selecciona tipo de documento</option>
-                            <option value="DNI">DNI</option>
-                            <option value="NIE">NIE</option>
-                            <option value="Pasaporte">Pasaporte</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="remitente-documento" class="form-label required">Número de documento</label>
-                        <input type="text" class="form-control" id="remitente-documento" required>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="remitente-telefono" class="form-label required">Teléfono de contacto</label>
-                        <input type="tel" class="form-control" id="remitente-telefono" placeholder="Formato: +34 6xxxxxxx"
-                            required>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="remitente-correo" class="form-label required">Correo electrónico</label>
-                        <input type="email" name="email" placeholder="email" class="form-control email" id="remitente-correo" placeholder="ejemplo@correo.com"
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> 
-                        <div class="valid-feedback">Correcto!</div>
-                        <div class="invalid-feedback">El email no es correcto.</div>                       
-                    </div>
-                </div>
-                <button type="button" class="btn btn-primary" onclick="siguientePaso()">Siguiente</button>
-            </div>
-
-            <div id="paso-2" class="step-section hide">
-                <!-- Apartado Destinatario -->
-                <h3>Apartado Destinatario</h3>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="destinatario-nombre" class="form-label required">Nombre</label>
-                        <input type="text" class="form-control" id="destinatario-nombre" required>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="destinatario-apellidos" class="form-label required">Apellidos</label>
-                        <input type="text" class="form-control" id="destinatario-apellidos" required>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                        <label for="destinatario-direccion" class="form-label required">Dirección</label>
-                        <input type="text" class="form-control" id="destinatario-direccion"
-                            placeholder="Calle, nº, piso, entre calles" required>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="destinatario-provincia" class="form-label required">Provincia</label>
-                        <select class="form-select" id="destinatario-provincia" required>
-                            <option value="" disabled selected>Selecciona una provincia</option>
-                            <option value="Pinar del Río">Pinar del Río</option>
-                            <option value="Artemisa">Artemisa</option>
-                            <option value="La Habana">La Habana</option>
-                            <option value="Mayabeque">Mayabeque</option>
-                            <option value="Matanzas">Matanzas</option>
-                            <option value="Cienfuegos">Cienfuegos</option>
-                            <option value="Villa Clara">Villa Clara</option>
-                            <option value="Sancti Spíritus">Sancti Spíritus</option>
-                            <option value="Ciego de Ávila">Ciego de Ávila</option>
-                            <option value="Camagüey">Camagüey</option>
-                            <option value="Las Tunas">Las Tunas</option>
-                            <option value="Granma">Granma</option>
-                            <option value="Holguín">Holguín</option>
-                            <option value="Santiago">Santiago</option>
-                            <option value="Guantánamo">Guantánamo</option>
-                            <option value="Isla de la Juventud">Isla de la Juventud</option>
-                            <!-- Agrega más provincias -->
-                        </select>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="destinatario-municipio" class="form-label required">Municipio</label>
-                        <select class="form-select" id="destinatario-municipio" required>
-                            <option value="" disabled selected>Selecciona municipio</option>
-                            <!-- Los municipios cambiarán dinámicamente según la provincia -->
-                        </select>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="destinatario-tipo-documento" class="form-label required">Tipo de documento</label>
-                        <select class="form-select" id="destinatario-tipo-documento" required>
-                            <option value="" disabled selected>Selecciona tipo documento</option>
-                            <option value="DNI">DNI</option>
-                            <option value="NIE">NIE</option>
-                            <option value="Pasaporte">Pasaporte</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="destinatario-documento" class="form-label required">Número de documento</label>
-                        <input type="text" class="form-control" id="destinatario-documento" required>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="destinatario-telefono" class="form-label required">Teléfono de contacto</label>
-                        <input type="tel" class="form-control" id="destinatario-telefono"
-                            placeholder="Formato: +53 123456789" required>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="destinatario-correo" class="form-label required">Correo electrónico</label>
-                        <input type="email" class="form-control" id="destinatario-correo" placeholder="ejemplo@correo.com"
-                            required>
-                    </div>
-                </div>
-
-                <button type="button" class="btn btn-secondary" onclick="pasoAnterior()">Atrás</button>
-                <button type="button" class="btn btn-primary" onclick="siguientePaso()">Siguiente</button>
-            </div>
-
-            <!-- Paso 3: Tipo de Envío -->
-            <div id="paso-3" class="step-section">
-                <h3>Tipo de Envío</h3>
-                <div class="mb-3">
-                    <label class="form-label">Seleccione el tipo de envío</label>
-                    <select class="form-select" id="tipo-envio" required>
-                        <option value="" disabled selected>Selecciona el tipo de envío</option>
-                        <option value="normal">Normal</option>
-                        <option value="urgente">Urgente</option>
-                        <option value="express">Express</option>
-                    </select>
-                </div>
-                <button type="button" class="btn btn-secondary" onclick="pasoAnterior()">Atrás</button>
-                <button type="button" class="btn btn-primary" onclick="siguientePaso()">Siguiente</button>
-            </div>
-
-            <!-- Paso 4: Finalizar -->
-            <div id="paso-4" class="step-section">
-                <h3>Resumen de Envío</h3>
-                <p><strong>Remitente:</strong> <span id="resumen-remitente"></span></p>
-                <p><strong>Destinatario:</strong> <span id="resumen-destinatario"></span></p>
-                <p><strong>Tipo de Envío:</strong> <span id="resumen-tipo-envio"></span></p>
-                <button type="button" class="btn btn-secondary" onclick="pasoAnterior()">Atrás</button>
-                <button type="submit" class="btn btn-success">Finalizar</button>
-            </div>
-
-            <!-- <button type="submit" class="btn btn-primary mt-3">Enviar</button> -->
-        </form>
-
-<!-- 
-        <form class="row g-3 needs-validation form-group" novalidate>
-            <div class="col-md-4 mb-2">
-                <label for="validationCustom01" class="required form-label">Email</label>
-                <input type="email" name="email" placeholder="email" class="form-control email" id="validationCustom00"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                <div class="valid-feedback">Correcto!</div>
-                <div class="invalid-feedback">El email no es correcto.</div>
-            </div>
-            <div class="col-md-4 mb-2">
-                <label for="validationCustom01" class="required form-label">Nombre</label>
-                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                <div class="valid-feedback">Correcto!</div>
-                <div class="invalid-feedback">Debes rellenar el nombre</div>
-            </div>
-            <div class="col-md-4">
-                <label for="validationCustom02" class="required form-label">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-            </div>
-            <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label">Username</label>
-                <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="validationCustomUsername"
-                        aria-describedby="inputGroupPrepend" required>
-                    <div class="invalid-feedback">
-                        Please choose a username.
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <label for="validationCustom03" class="form-label">City</label>
-                <input type="text" class="form-control" id="validationCustom03" required>
-                <div class="invalid-feedback">
-                    Please provide a valid city.
-                </div>
-            </div>
-            <div class="col-md-3">
-                <label for="validationCustom04" class="form-label">State</label>
-                <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                </select>
-                <div class="invalid-feedback">
-                    Please select a valid state.
-                </div>
-            </div>
-            <div class="col-md-3">
-                <label for="validationCustom05" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="validationCustom05">
-                <div class="invalid-feedback">
-                    Please provide a valid zip.
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                        Agree to terms and conditions
-                    </label>
-                    <div class="invalid-feedback">
-                        You must agree before submitting.
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-        </form> -->
-
+            <h2>Envia un email</h2>
+            <p>Envía un email incluyendo los datos de envío y el tipo de envío a &nbsp;
+            <a href="mailto:mandalopacuba@gmail.com?subject=Realizar%20un%20Envio" class="btn btn-primary">mandalopacuba@gmail.com</a> </p>
+        </div>
         <a href="index.html" class="btn btn-info btn-primary float-end m-3" role="button">
             <i class="fa-solid fa-backward"></i> Volver
         </a>
@@ -345,7 +97,7 @@
         <div class="container footer-content">
             <div class="text-left scico">
                 <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f fs-4"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
 
             <div class="footer-links  text-right">
@@ -410,14 +162,14 @@
         const municipioDestSelect = document.getElementById("destinatario-municipio");
         // debugger;
 
-        $('#remitente-provincia').change(function(){
+        $('#remitente-provincia').change(function () {
             filterMunicipio(provinciaSelect, municipioSelect);
         });
 
-        $('#destinatario-provincia').change(function(){
+        $('#destinatario-provincia').change(function () {
             filterMunicipio(provinciaDestSelect, municipioDestSelect);
         });
-       
+
         let pasoActual = 1;
 
         function mostrarPaso(paso) {
@@ -448,7 +200,7 @@
         }
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E7PV4BMC4"></script>
-   
+
 
 </body>
 
