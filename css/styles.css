@@ -68,6 +68,10 @@ body, html {
   align-content: center;
   width: calc(100hh - 60px);
 }
+.fbtnb :hover {
+  color: white !important;
+  background-color: #7C8CC9;
+}
 .fbtnb li {
   background-color: #002A8F;
   margin: 2px;
@@ -75,18 +79,28 @@ body, html {
   border-radius: 5px;
 }
 .fbtnb i {
-  font-size: 30px;
+  font-size: 28px;
   position: relative;
   top: 5px;
-  margin-right: 5px;
+  margin-right: 3px;
 }
 .fbtnb .fbtnitem a {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: #FFFFFF !important;
   position: relative;
   top: -3px;
   text-decoration: none;
+}
+
+.carousel-caption {
+  margin: 0px 8px;
+  color: #002A8F;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.6);
+}
+.carousel-caption h5 {
+  color: #002A8F;
 }
 
 .list-menu-item a:hover {
@@ -247,7 +261,7 @@ h4 {
 }
 
 .fs-2 {
-  font-size: 50px !important;
+  font-size: 40px !important;
 }
 
 .navbar {

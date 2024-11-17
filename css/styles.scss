@@ -79,6 +79,12 @@ body, html {
   justify-content: center;
   align-content: center;
   width: calc(100hh - 60px);
+
+  :hover {
+    color: white !important;
+    background-color: #7C8CC9;
+  }
+
     li { 
       // text-align: left;
       background-color: $color-p1;
@@ -86,34 +92,34 @@ body, html {
       padding: 4px 6px;
       border-radius: 5px;
       // min-width: 150px;
+
     }
 
-    i { font-size: 30px; 
+    i { font-size: 28px; 
       position: relative;
       top: 5px;
-      margin-right: 5px;
+      margin-right: 3px;
     }
 
     .fbtnitem a {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bold;
       color: $color-white !important;
       position: relative;
       top: -3px;
       text-decoration: none;
-      // text-align: center;
-      // min-width: 100px;
-      // margin: 10px 10px;
-      // 
-      // padding: 10px 5px;
-      // position: relative;
-      // display: block;
-      // padding: 6px 0px;
-      // color: #002A8F;
     }
 }
 
-
+.carousel-caption {
+    margin: 0px 8px;
+    color: #002A8F;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.6);
+    h5 {
+      color: #002A8F;
+    }
+}
 
   .list-menu-item a:hover {
       color: white !important;
@@ -259,7 +265,7 @@ h4 { color: $color-gs2 !important; font-size: 22px;
     background-color: #002A8F !important;
 }
 .fs-1 {  font-size: 60px !important;}
-.fs-2 {  font-size: 50px !important;}
+.fs-2 {  font-size: 40px !important;}
 
 .navbar {  border-bottom: #002A8F 2px solid; padding: 0; }
 .navbar-nav .nav-link {  padding-left: 11px;}
