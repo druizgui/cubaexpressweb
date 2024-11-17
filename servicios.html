@@ -21,7 +21,7 @@
     <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
     <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />   
     <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
     <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
@@ -64,9 +64,7 @@
     </nav>
 
     <div class="content-container">
-
         <h1>Servicios</h1>
-
         <!-- <h2>Datos necesarios</h2>
         <p>Para realizar un envío es necesario rellenar los datos del remitente y del destinatario.</p>
         <h3>Datos Del remitente</h3>
@@ -86,9 +84,9 @@
             <li>Teléfono de contacto</li>
         </ul> -->
 
-        <h2>Tipos de envío</h2>
-        <div class="container-fluid d-sm-flex justify-content-center d-sm-flex">
+        <div class="container d-flex flex-wrap">
             <div class="card m-2">
+                <a name="svc-urg-movil"></a>
                 <h5 class="card-header bg-danger">Teléfono móvil - Urgente</h5>
                 <div class="card-body">
                     <p class="card-text">Los teléfonos sólo pueden enviarse a Cuba por vía privada y se envían <span
@@ -96,14 +94,14 @@
                     <ul>
                         <li><span class="fw-bold me-1">Recogida:</span> Vedado, La Habana</li>
                         <li><span class="fw-bold me-1">Salida:</span>Todos los domingos</li>
-                        <li><span class="fw-bold me-1">Recogida hasta:</span>Jueves a las 19:00 h</li>
-                        <li><span class="fw-bold me-1">Plazo entrega aproximada:</span>En 5-6 días</li>
+                        <li><span class="fw-bold me-1">Recogida hasta:</span>19h del Jueves</li>
+                        <li><span class="fw-bold me-1">Entrega aproximada:</span>5-6 días</li>
                     </ul>
                     <h4>Precios</h4>
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col" class="text-center" style="width: 150px;">Precios</th>
+                                <th scope="col" class="text-center" style="width: 120px;">Precios</th>
                                 <th scope="col" class="text-center">La Habana</th>
                                 <th scope="col" class="text-center">Provincias</th>
                             </tr>
@@ -115,14 +113,15 @@
                                 <td class="text-center">70€</td>
                             </tr>
                             <tr>
-                                <th scope="row">Entrega a casa</th>
-                                <td class="text-center">+10-15 € (según municipio)</td>
+                                <th scope="row">Entrega casa</th>
+                                <td class="text-center">+10-15 €</td>
                                 <td class="text-center">+20€</td>
                             </tr>
                         </tbody>
                     </table>
+                    <p>El precio <span class="fw-bold">"Entrega casa"</span> para Habana Centro: 10€ y para la periferia: 15 €</p>
                     <p>Este envío se hace a través de las estaciones de autobuses. Sin el servicio de <span
-                            class="fw-bold">"Entrega a casa"</span>,
+                            class="fw-bold">"Entrega casa"</span>,
                         se recoge la estación correspondiente el día y a la hora indicada por nuestro representante.</p>
                     <a href="mailto:mandalopacuba@gmail.com?subject=Envio%20Tlf-Urgente"
                         class="btn btn-primary float-end">Contacta</a>
@@ -130,6 +129,7 @@
             </div>
 
             <div class="card m-2">
+                <a name="svc-urg-laptop"></a>
                 <h5 class="card-header bg-danger">Portátil o tablet - Urgente</h5>
                 <div class="card-body">
                     <p class="card-text">Sólo pueden enviarse a Cuba por vía privada y se envían <span
@@ -137,14 +137,14 @@
                     <ul>
                         <li><span class="fw-bold me-1">Recogida:</span> Vedado, La Habana</li>
                         <li><span class="fw-bold me-1">Salida:</span>Todos los domingos</li>
-                        <li><span class="fw-bold me-1">Recogida hasta:</span>Jueves a las 19:00 h</li>
-                        <li><span class="fw-bold me-1">Plazo entrega aproximada:</span>En 5-6 días</li>
+                        <li><span class="fw-bold me-1">Recogida hasta:</span>19h del Jueves</li>
+                        <li><span class="fw-bold me-1">Entrega aproximada:</span>5-6 días</li>
                     </ul>
                     <h4>Precios</h4>
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col" class="text-center" style="width: 150px;">Precios</th>
+                                <th scope="col" class="text-center" style="width: 120px;">Precios</th>
                                 <th scope="col" class="text-center">La Habana</th>
                                 <th scope="col" class="text-center">Provincias</th>
                             </tr>
@@ -161,14 +161,16 @@
                                 <td class="text-center">80€</td>
                             </tr>
                             <tr>
-                                <th scope="row">Entrega a casa</th>
-                                <td class="text-center">+10-15 € (según municipio)</td>
+                                <th scope="row">Entrega casa</th>
+                                <td class="text-center">+10-15 €</td>
                                 <td class="text-center">+20€</td>
                             </tr>
                         </tbody>
                     </table>
+                    <p>El precio <span class="fw-bold">"Entrega casa"</span> para Habana Centro: 10€ y para la
+                        periferia: 15 €</p>
                     <p>Este envío se hace a través de las estaciones de autobuses. Sin el servicio de <span
-                            class="fw-bold">"Entrega a casa"</span>,
+                            class="fw-bold">"Entrega casa"</span>,
                         se recoge la estación correspondiente el día y a la hora indicada por nuestro representante.</p>
                     <a href="mailto:mandalopacuba@gmail.com?subject=Envio%20portatil-tablet-urgente"
                         class="btn btn-primary float-end">Contacta</a>
@@ -176,44 +178,47 @@
             </div>
 
             <div class="card m-2">
+                <a name="svc-urg-medica"></a>
                 <h5 class="card-header bg-danger">Medicamentos - Urgente</h5>
                 <div class="card-body">
                     <p class="card-text">Envío de medicamentos y material sanitario urgente.</p>
                     <ul>
                         <li><span class="fw-bold me-1">Recogida:</span> Vedado, La Habana</li>
                         <li><span class="fw-bold me-1">Salida:</span>Todos los domingos</li>
-                        <li><span class="fw-bold me-1">Recogida hasta:</span>Jueves a las 19:00 h</li>
-                        <li><span class="fw-bold me-1">Plazo entrega aproximada:</span>En 5-6 días</li>
+                        <li><span class="fw-bold me-1">Recogida hasta:</span>19h del Jueves</li>
+                        <li><span class="fw-bold me-1">Entrega aproximada:</span>5-6 días</li>
                     </ul>
                     <h4>Precios</h4>
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col" class="text-center" style="width: 150px;">Precios</th>
+                                <th scope="col" class="text-center" style="width: 120px;">Precios</th>
                                 <th scope="col" class="text-center">Habana</th>
                                 <th scope="col" class="text-center">Provincias</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">Hasta 300 gramos</th>
+                                <th scope="row">Hasta 300 gr</th>
                                 <td class="text-center">30€</td>
                                 <td class="text-center">50€</td>
                             </tr>
                             <tr>
-                                <th scope="row">cada 100 gramos</th>
+                                <th scope="row">cada 100 gr</th>
                                 <td class="text-center">+10€</td>
                                 <td class="text-center">+20€</td>
                             </tr>
                             <tr>
-                                <th scope="row">Entrega a casa</th>
-                                <td class="text-center">+10-15 € (según municipio)</td>
+                                <th scope="row">Entrega casa</th>
+                                <td class="text-center">+10-15 €</td>
                                 <td class="text-center">+20€</td>
                             </tr>
                         </tbody>
                     </table>
+                    <p>El precio <span class="fw-bold">"Entrega casa"</span> para Habana Centro: 10€ y para la
+                        periferia: 15 €</p>
                     <p>Este envío se hace a través de las estaciones de autobuses. Sin el servicio de <span
-                            class="fw-bold">"Entrega a casa"</span>,
+                            class="fw-bold">"Entrega casa"</span>,
                         se recoge la estación correspondiente el día y a la hora indicada por nuestro representante.</p>
                     <a href="mailto:mandalopacuba@gmail.com?subject=Envio%20Medicamentos-urgente"
                         class="btn btn-primary float-end">Contacta</a>
@@ -221,14 +226,15 @@
             </div>
 
             <div class="card m-2">
+                <a name="svc-urg-doc"></a>
                 <h5 class="card-header bg-danger">Documentos - Urgente</h5>
                 <div class="card-body">
                     <p class="card-text">Envío de documentación urgente.</p>
                     <ul>
                         <li><span class="fw-bold me-1">Recogida:</span> Vedado, La Habana</li>
                         <li><span class="fw-bold me-1">Salida:</span>Todos los domingos</li>
-                        <li><span class="fw-bold me-1">Recogida hasta:</span>Jueves a las 19:00 h</li>
-                        <li><span class="fw-bold me-1">Plazo entrega aproximada:</span>En 5-6 días</li>
+                        <li><span class="fw-bold me-1">Recogida hasta:</span>19h del Jueves</li>
+                        <li><span class="fw-bold me-1">Entrega aproximada:</span>5-6 días</li>
                     </ul>
                     <h4>Precios</h4>
                     <table class="table">
@@ -241,43 +247,47 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">Hasta 300 gramos</th>
+                                <th scope="row">Hasta 300 gr</th>
                                 <td class="text-center">30€</td>
                                 <td class="text-center">50€</td>
                             </tr>
                             <tr>
-                                <th scope="row">cada 100 gramos</th>
+                                <th scope="row">cada 100 gr</th>
                                 <td class="text-center">+10€</td>
                                 <td class="text-center">+20€</td>
                             </tr>
                             <tr>
-                                <th scope="row">Entrega a casa</th>
-                                <td class="text-center">+10-15 € (según municipio)</td>
+                                <th scope="row">Entrega casa</th>
+                                <td class="text-center">+10-15 €</td>
                                 <td class="text-center">+20€</td>
                             </tr>
                         </tbody>
                     </table>
+                    <p>El precio <span class="fw-bold">"Entrega casa"</span> para Habana Centro: 10€ y para la
+                        periferia: 15 €</p>
                     <p>Este envío se hace a través de las estaciones de autobuses. Sin el servicio de <span
-                            class="fw-bold">"Entrega a casa"</span>,
+                            class="fw-bold">"Entrega casa"</span>,
                         se recoge la estación correspondiente el día y a la hora indicada por nuestro representante.</p>
                     <a href="mailto:mandalopacuba@gmail.com?subject=Envio%20Documentos-urgente"
                         class="btn btn-primary float-end">Contacta</a>
                 </div>
             </div>
 
-
             <div class="card m-2">
+                <a name="svc-ord-medica"></a>
                 <h5 class="card-header bg-primary">Medicamentos - Ordinario</h5>
                 <div class="card-body">
-                    <p class="card-text">Envío de medicamentos y material sanitario. Se incluyen los pañales para adultos. 
+                    <p class="card-text">Envío de medicamentos y material sanitario. Se incluyen los pañales para
+                        adultos.
                         <span class="fw-bold">En Cuba pagan en moneda nacional unos 200 pesos en MN.</span>
-                        </p>
+                    </p>
                     <ul>
                         <li><span class="fw-bold me-1">Límite de peso:</span> 20 Kg</li>
-                        <li><span class="fw-bold me-1">Recogida:</span>Aeropuerto de La Habana, Varadero, Camagüey, Holguin y Santiago</li>
+                        <li><span class="fw-bold me-1">Recogida:</span>Aeropuerto de La Habana, Varadero, Camagüey,
+                            Holguin y Santiago</li>
                         <li><span class="fw-bold me-1">Salida:</span>Todos los domingos</li>
-                        <li><span class="fw-bold me-1">Recogida hasta:</span>Jueves a las 19:00 h</li>
-                        <li><span class="fw-bold me-1">Plazo entrega aproximada:</span>En 5-6 días</li>
+                        <li><span class="fw-bold me-1">Recogida hasta:</span>19h del Jueves</li>
+                        <li><span class="fw-bold me-1">Entrega aproximada:</span>5-6 días</li>
                         <li><span class="fw-bold me-1">Embalaje:</span>Se cobra aparte</li>
                     </ul>
                     <h4>Precios</h4>
@@ -308,7 +318,72 @@
                         </tbody>
                     </table>
                     <p>Este envío se hace a través de las estaciones de autobuses. Sin el servicio de <span
-                            class="fw-bold">"Entrega a casa"</span>,
+                            class="fw-bold">"Entrega casa"</span>,
+                        se recoge la estación correspondiente el día y a la hora indicada por nuestro representante.</p>
+                    <a href="mailto:mandalopacuba@gmail.com?subject=Envio%20Documentos-urgente"
+                        class="btn btn-primary float-end">Contacta</a>
+                </div>
+            </div>
+
+            
+
+
+            <div class="card m-2">
+                <a name="svc-ord-paquete"></a>
+                <h5 class="card-header bg-primary">Paquetes - Ordinario</h5>
+                <div class="card-body">
+                    <p class="card-text">Clasifican como miscelánea los artículos siguientes: calzado, confecciones, alimentos, artículos de aseo personal y del hogar,
+                         bisutería, perfumería y similares. <span class="fw-bold">NO SE PUEDE MANDAR NADA EN SPRAY, NADA INFLAMABLE NI CORROSIVO. 
+                         NI PINTURA DE UÑAS, NI ACETONA, NI PILAS DE NINGUN TIPO</span>.
+                    </p>
+                    <ul>
+                        <li><span class="fw-bold me-1">Límite de peso:</span>de 3 a 50 Kg</li>
+                        <li><span class="fw-bold me-1">Recogida:</span>Aeropuerto de La Habana, Varadero, Camagüey,
+                            Holguin y Santiago</li>
+                        <li><span class="fw-bold me-1">Salida:</span>Todos los domingos</li>
+                        <li><span class="fw-bold me-1">Recogida hasta:</span>19h del Jueves</li>
+                        <li><span class="fw-bold me-1">Entrega aproximada:</span>30 días</li>
+                        <li><span class="fw-bold me-1">Embalaje:</span>Se cobra aparte</li>
+                    </ul>
+                    <h4>Precios</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 60px;">Peso</th>
+                                <th scope="col" class="text-center">La Habana</th>
+                                <th scope="col" class="text-center">Provincias</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">3 Kg</th>
+                                <td class="text-center">32€</td>
+                                <td class="text-center">35€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">20 Kg</th>
+                                <td class="text-center">150€</td>
+                                <td class="text-center">160€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">30 Kg</th>
+                                <td class="text-center">195€</td>
+                                <td class="text-center">220€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">40 Kg</th>
+                                <td class="text-center">220€</td>
+                                <td class="text-center">260€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">50 Kg</th>
+                                <td class="text-center">250€</td>
+                                <td class="text-center">280€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Este envío se hace a través de las estaciones de autobuses. Sin el servicio de <span
+                            class="fw-bold">"Entrega casa"</span>,
                         se recoge la estación correspondiente el día y a la hora indicada por nuestro representante.</p>
                     <a href="mailto:mandalopacuba@gmail.com?subject=Envio%20Documentos-urgente"
                         class="btn btn-primary float-end">Contacta</a>
@@ -337,22 +412,34 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="card m-2">
-                <h5 class="card-header">Medicamentos y material sanitario</h5>
+                <a name="svc-ord-maritimo"></a>
+                <h5 class="card-header">Marítimo - Ordinario</h5>
                 <div class="card-body">
-                    <p class="card-text">Se incluyen los pañales para adultos. En Cuba pagan en moneda nacional unos 200
-                        pesos en MN.</p>
-                    <p class="card-text">Para recoger en el Aeropuerto de la Habana, Varadero, Camagüey, Holguin y
-                        Santiago
+                    <p class="card-text">Envío de medicamentos y material sanitario. Se incluyen los pañales para
+                        adultos.
+                        <span class="fw-bold">En Cuba pagan en moneda nacional unos 200 pesos en MN.</span>
                     </p>
                     <ul>
-                        <li><span class="fw-bold me-1">Prioridad:</span>Ordinaria</li>
-                        <li><span class="fw-bold me-1">Límite de peso:</span> Hasta 20 Kg</li>
-                        <li><span class="fw-bold me-1">Recogida:</span> Aeropuerto de la Habana, Varadero, Camagüey,
-                            Holguin
-                            y Santiago</li>
-                        <li><span class="fw-bold me-1">Salida:</span>Todas las semanas</li>
-                        <li><span class="fw-bold me-1">Plazo entrega aproximada:</span>En 30 días</li>
+                        <li><span class="fw-bold me-1">Límite de peso:</span> 20 Kg</li>
+                        <li><span class="fw-bold me-1">Recogida:</span>Aeropuerto de La Habana, Varadero, Camagüey,
+                            Holguin y Santiago</li>
+                        <li><span class="fw-bold me-1">Salida:</span>Todos los domingos</li>
+                        <li><span class="fw-bold me-1">Recogida hasta:</span>19h del Jueves</li>
+                        <li><span class="fw-bold me-1">Entrega aproximada:</span>60-90 días</li>
+                        <li><span class="fw-bold me-1">Embalaje:</span>Se cobra aparte</li>
                     </ul>
                     <h4>Precios</h4>
                     <table class="table">
@@ -381,66 +468,73 @@
                             </tr>
                         </tbody>
                     </table>
-                    <a href="mailto:mandalopacuba@gmail.com?subject=Envio%20Medicamentos"
+                    <p>Este envío se hace a través de las estaciones de autobuses. Sin el servicio de <span
+                            class="fw-bold">"Entrega casa"</span>,
+                        se recoge la estación correspondiente el día y a la hora indicada por nuestro representante.</p>
+                    <a href="mailto:mandalopacuba@gmail.com?subject=Envio%20Documentos-urgente"
                         class="btn btn-primary float-end">Contacta</a>
                 </div>
             </div>
-            <div class="card m-2">
-                <h5 class="card-header">Medicamentos y material sanitario</h5>
-                <div class="card-body">
-                    <p class="card-text">Se incluyen los pañales para adultos. En Cuba pagan en moneda nacional unos 200
-                        pesos en MN.</p>
-                    <p class="card-text">Para recoger en el Aeropuerto de la Habana, Varadero, Camagüey, Holguin y
-                        Santiago
-                    </p>
-                    <ul>
-                        <li><span class="fw-bold">Límite de peso:</span> Hasta 20 Kg</li>
-                        <li><span class="fw-bold">Recogida:</span> Aeropuerto de la Habana, Varadero, Camagüey, Holguin
-                            y
-                            Santiago</li>
-                    </ul>
-                    <a href="mailto:mandalopacuba@gmail.com?subject=Envio%20Medicamentos"
-                        class="btn btn-primary float-end">Contacta</a>
-                </div>
-            </div>
-        </div>
 
-        <div id="cookie-banner"
-            style="display:none; background-color: #333; color: white; padding: 15px; position: fixed; bottom: 47px; text-align: center;">
-            Utilizamos cookies propias y de terceros para analizar nuestros servicios y mostrarte la información acorde
-            a
-            tus preferencias.
-            Al hacer clic en "Aceptar todo", acepta el uso de TODAS las cookies. <a href="politica-de-cookies.htm"
-                style="color: #4A90E2;">Leer más</a>.
-            <button id="accept-cookies" onClick="hide('cookie-banner')"
-                style="margin-left: 10px; padding: 5px 10px; background-color: #4A90E2; color: white; border: none; cursor: pointer;">
-                Aceptar
-            </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
-        <footer>
-            <div class="container footer-content">
-                <!-- <div class="text-left">
+    </div>
+    <div id="cookie-banner"
+        style="display:none; background-color: #333; color: white; padding: 15px; position: fixed; bottom: 47px; text-align: center;">
+        Utilizamos cookies propias y de terceros para analizar nuestros servicios y mostrarte la información acorde
+        a
+        tus preferencias.
+        Al hacer clic en "Aceptar todo", acepta el uso de TODAS las cookies. <a href="politica-de-cookies.htm"
+            style="color: #4A90E2;">Leer más</a>.
+        <button id="accept-cookies" onClick="hide('cookie-banner')"
+            style="margin-left: 10px; padding: 5px 10px; background-color: #4A90E2; color: white; border: none; cursor: pointer;">
+            Aceptar
+        </button>
+    </div>
+    <footer>
+        <div class="container footer-content">
+            <!-- <div class="text-left">
               <p class="mb-0">Hola</p>
             </div>         -->
-                <div class="text-left scico">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f fs-4"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                </div>
-
-                <div class="footer-links  text-right">
-                    <a href="contacto.html">Contacta</a>
-                    <a href="nosotros.html">Nosotros</a>
-                </div>
+            <div class="text-left scico">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f fs-4"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             </div>
-        </footer>
 
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E7PV4BMC4"></script>
-        <script src="js/scripts.js"></script>
+            <div class="footer-links  text-right">
+                <a href="contacto.html">Contacta</a>
+                <a href="nosotros.html">Nosotros</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E7PV4BMC4"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

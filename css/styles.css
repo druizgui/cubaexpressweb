@@ -29,7 +29,6 @@ body, html {
   list-style-type: none;
   margin: auto;
   /* border: 3px solid #D9D9D9;  */
-  padding: 10px;
   padding-left: 0;
   min-width: 200px;
   max-width: 800px;
@@ -53,6 +52,41 @@ body, html {
   display: block;
   padding: 6px 0px;
   color: #002A8F;
+}
+
+.fbtnb {
+  list-style-type: none;
+  margin: auto;
+  /* border: 3px solid #D9D9D9;  */
+  padding-left: 0;
+  min-width: 200px;
+  max-width: 800px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: calc(100hh - 60px);
+}
+.fbtnb li {
+  background-color: #002A8F;
+  margin: 2px;
+  padding: 4px 6px;
+  border-radius: 5px;
+}
+.fbtnb i {
+  font-size: 30px;
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+}
+.fbtnb .fbtnitem a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF !important;
+  position: relative;
+  top: -3px;
+  text-decoration: none;
 }
 
 .list-menu-item a:hover {
@@ -130,7 +164,8 @@ footer {
 
 /* Booastrap override */
 .card {
-  min-width: 280px;
+  min-width: 320px;
+  max-width: 340px;
 }
 
 .accordion-button {
@@ -155,7 +190,8 @@ footer {
 }
 
 .bg-info {
-  background-color: #5B828E !important;
+  background-color: #36508D !important;
+  color: #FFFFFF;
 }
 
 .text-primary {

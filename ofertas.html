@@ -7,11 +7,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">  <!-- FontAwesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Google Fonts: Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
-          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Roboto -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
@@ -32,7 +36,7 @@
                 <a href="index.html"><img src="img/logo.png" alt="pacuba" class="ms-1" /></a>
             </div>
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseNavbar">
+                data-bs-target="#collapseNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse fs-5" id="collapseNavbar">
@@ -54,92 +58,129 @@
     <div class="content-container">
         <h1>Ofertas</h1>
 
-        <a class="my-jquery-collapse btn btn-primary" data-my-target="#collapse-header-nav" role="button"
-            aria-expanded="true" aria-controls="collapse-header-nav" style="display: none;">
-            Drop-Down
-        </a>
-        <div class="d-none" id="collapse-header-nav">
-            <div class="card">
-                <div class="accordion" id="accordionHelp">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                MALETAS DE 23 KG DE MISCELANEA
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionHelp">
-                            <div class="accordion-body">
-                                <p>Envío de maletas de 23 kg donde puede mezclar aseo,  comida, medicamentos, ropa y zapatos.</p>
-                                <p>Se tarda más de <span class="fw-bold">60 días laborables</span></p>
-                                <p>Incluye obtención, legalización en <span class="fw-bold">MINREX y Consulado Español
-                                    </span>, y mensajería hasta Madrid.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Servicio Express - 330 €
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionHelp">
-                            <div class="accordion-body">
-                                <p>Precio por documento</p>
-                                Se tramitan:
-                                <ul>
-                                    <li>Antecedentes penales</li>
-                                    <li>Certificados de nacimiento</li>
-                                    <li>Matrimonio</li>
-                                    <li>Divorcios</li>
-                                    <li>Estado conyugal</li>
-                                    <li>Fe de soltería</li>
-                                </ul>
-                                <p>Tarda unos <span class="fw-bold">45 días laborables</span> (solo hasta MINREX son 3
-                                    semanas)</p>
-                                <p>Incluye obtención, legalización en <span class="fw-bold">MINREX y Consulado Español
-                                    </span>, y mensajería hasta
-                                    Madrid.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Otros Documentos
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionHelp">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>Trámites de extranjería en Madrid capital.</li>
-                                    <li> Trámites de visados a Estados Unidos.</li>
-                                </ul>
-                                <p>Consulte sobre otro tipo de documentación en nuestra página de
-                                    <a href="contacto.html">Contacto</a>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="container d-flex flex-wrap">
+            <div class="card m-2">
+                <a name="ofe-maletas"></a>
+                <h5 class="card-header bg-primary">Maletas Miscelanea 23Kg</h5>
+                <div class="card-body">
+                    <p class="card-text">Envío de maletas de 23 kg donde puede mezclar <span class="fw-bold">aseo,
+                            comida, medicamentos, ropa y zapatos</span>.</p>
+                    <ul>
+                        <li><span class="fw-bold me-1">Límite de peso:</span> 20 Kg</li>
+                        <li><span class="fw-bold me-1">Recogida:</span>Aeropuerto de La Habana, Varadero, Camagüey,
+                            Holguin y Santiago</li>
+                        <li><span class="fw-bold me-1">Salida:</span>Todos los domingos</li>
+                        <li><span class="fw-bold me-1">Recogida hasta:</span>19h del Jueves</li>
+                        <li><span class="fw-bold me-1">Entrega aproximada:</span>5-6 días</li>
+                    </ul>
+                    <h4>Precios</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-center" style="width: 120px;">Precios</th>
+                                <th scope="col" class="text-center">La Habana</th>
+                                <th scope="col" class="text-center">Provincias</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Envío</th>
+                                <td class="text-center">280€</td>
+                                <td class="text-center">310€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Embalaje</th>
+                                <td class="text-center">10€</td>
+                                <td class="text-center">10€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Entrega a casa</th>
+                                <td class="text-center">20€</td>
+                                <td class="text-center"> No disponible </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="mailto:mandalopacuba@gmail.com?subject=Oferta%20maletas-23Kg"
+                        class="btn btn-primary float-end">Contacta</a>
                 </div>
             </div>
+            <div class="card m-2">
+                <a name="ofe-maletas-misc"></a>
+                <h5 class="card-header bg-primary">Maletas 1ªnecesidad</h5>
+                <div class="card-body">
+                    <p class="card-text">Envío de maletas de 23 kg donde puede mezclar <span class="fw-bold">aseo,
+                            comida, medicamentos</span>.</p>
+                    <ul>
+                        <li><span class="fw-bold me-1">Límite de peso:</span> 20 Kg</li>
+                        <li><span class="fw-bold me-1">Recogida:</span>Aeropuerto de La Habana, Varadero, Camagüey,
+                            Holguin y Santiago</li>
+                        <li><span class="fw-bold me-1">Salida Habana:</span>Cada semana</li>
+                        <li><span class="fw-bold me-1">Salida Provincias:</span>Cada 2 semanas</li>
+                        <li><span class="fw-bold me-1">Recogida hasta:</span>19h del Jueves</li>
+                        <li><span class="fw-bold me-1">Entrega aproximada:</span>5-6 días</li>
+                    </ul>
+                    <h4>Precios</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-center" style="width: 120px;">Precios</th>
+                                <th scope="col" class="text-center">La Habana</th>
+                                <th scope="col" class="text-center">Provincias</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Envío</th>
+                                <td class="text-center">250€</td>
+                                <td class="text-center">270€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Embalaje</th>
+                                <td class="text-center">10€</td>
+                                <td class="text-center">10€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Entrega a casa</th>
+                                <td class="text-center">20€</td>
+                                <td class="text-center"> No disponible </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="mailto:mandalopacuba@gmail.com?subject=Oferta%20maletas-23Kg"
+                        class="btn btn-primary float-end">Contacta</a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
 
     </div>
 
     <div id="cookie-banner"
-         style="display:none; background-color: #333; color: white; padding: 15px; position: fixed; bottom: 47px; text-align: center;">
+        style="display:none; background-color: #333; color: white; padding: 15px; position: fixed; bottom: 47px; text-align: center;">
         Utilizamos cookies propias y de terceros para analizar nuestros servicios y mostrarte la información acorde a
         tus preferencias.
         Al hacer clic en "Aceptar todo", acepta el uso de TODAS las cookies. <a href="politica-de-cookies.htm"
-                                                                                style="color: #4A90E2;">Leer más</a>.
+            style="color: #4A90E2;">Leer más</a>.
         <button id="accept-cookies" onClick="hide('cookie-banner')"
-                style="margin-left: 10px; padding: 5px 10px; background-color: #4A90E2; color: white; border: none; cursor: pointer;">
+            style="margin-left: 10px; padding: 5px 10px; background-color: #4A90E2; color: white; border: none; cursor: pointer;">
             Aceptar
         </button>
     </div>
@@ -158,10 +199,10 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E7PV4BMC4"></script>
     <script src="js/scripts.js"></script>
     <script>
@@ -175,4 +216,5 @@
         })
     </script>
 </body>
+
 </html>
