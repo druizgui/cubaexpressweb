@@ -70,7 +70,7 @@
             <div class="col-md-3 mb-3">
                 <label for="filtroofertas" class="form-label fw-bold">Filtrar por:</label>
                 <select class="form-select" id="filtroofertas" required>
-                    <option value="" selected>Selecciona un filtro</option>
+                    <option value="" selected>Filtrar</option>
                     <option value="urg">Urgente</option>
                     <option value="ord">Ordinario</option>
                     <option value="ofe">Ofertas</option>
@@ -611,6 +611,25 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E7PV4BMC4"></script>
     <script src="js/scripts.js"></script>
     <script>
+        $(document).ready(function () {
+            const selectedType = getQueryParam('filter');
+            if (selectedType) {
+                $('#filterSelect').val(selectedType); // Establece el valor del select
+                applyFilter(selectedType); // Aplica el filtro
+            }
+        });
+
+        function applyFilter(selectedType) {
+            const boxes = document.querySelectorAll('.card'); // Selecciona todas las capas
+            boxes.forEach(box => {
+                if (selectedType === "" || box.dataset.type === selectedType) {
+                box.classList.remove('d-none'); // Muestra las capas que coinciden
+                } else {
+                box.classList.add('d-none'); // Oculta las capas que no coinciden
+                }
+            });
+        }
+
         document.getElementById('filtroofertas').addEventListener('change', function () {
             const selectedType = this.value; // Obtiene el valor seleccionado del select
             const boxes = document.querySelectorAll('.card'); // Selecciona todas las capas

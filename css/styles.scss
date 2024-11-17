@@ -1,6 +1,7 @@
 $font-primary: 'Roboto', sans-serif;
 $color-primary: #002A8F;
 $color-white: #FFFFFF;
+$max-width-total: 1120px !important;
 
 $color-p1: #002A8F; $color-p2: #36508D;$color-p3: #4A5CA3;$color-p4: #7C8CC9;
 $color-s1: #CB1515; $color-s2: #CC1A0F;$color-s3: #E9361E;$color-s4: #EA8363;
@@ -16,7 +17,7 @@ body, html {
   padding-bottom: 10px;
   font-family: 'Roboto', sans-serif;
   margin: auto;
-  max-width: 1120px;
+  max-width: $max-width-total;
 }
 
 
@@ -148,7 +149,7 @@ footer {
   width: 100%;
   height: 48px;
   display: inline;
-  max-width: 1000px !important;
+  max-width: $max-width-total;
 }
 
 .footer-content {
@@ -156,6 +157,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  padding-top: 5px;
 }
 
 .iconfa {

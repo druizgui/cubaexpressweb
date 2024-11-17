@@ -9,6 +9,11 @@ $(document).ready(function () {
     }
 });
 
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
 function hide(obj) {
     var el = document.getElementById(obj);
     localStorage.setItem('cookies-accept', 'accepted');
