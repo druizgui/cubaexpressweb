@@ -1,7 +1,7 @@
 $font-primary: 'Roboto', sans-serif;
 $color-primary: #002A8F;
 $color-white: #FFFFFF;
-$max-width-total: 1120px !important;
+$max-width-total: 1150px !important;
 
 $color-p1: #002A8F; $color-p2: #36508D;$color-p3: #4A5CA3;$color-p4: #7C8CC9;
 $color-s1: #CB1515; $color-s2: #CC1A0F;$color-s3: #E9361E;$color-s4: #EA8363;
@@ -19,16 +19,19 @@ body, html {
   margin: auto;
   max-width: $max-width-total;
 }
-
-
 .content-container {
   height: calc(100vh - 100px); /* Ajusta el tamaño del contenedor */
   overflow-y: auto;
-  margin: 10px 4px 30px 4px;
-  
-
+  margin: 10px 0px 47px 0px;
+  padding-bottom: 20px;
+  background-color: $color-white;
 }
 
+
+.cookie-banner {
+  display:none; background-color: #333; color: white; padding: 15px; position: fixed; bottom: 47px; text-align: center;
+  max-width: $max-width-total;
+}
 .icon-main {
   height: 100px;
 }
@@ -115,6 +118,12 @@ body, html {
       top: -3px;
       text-decoration: none;
     }
+}
+.carousel-inner img {
+  object-fit: cover;
+  object-position: center;
+  height: 50vh;
+  overflow: hidden;
 }
 
 .carousel-caption {
